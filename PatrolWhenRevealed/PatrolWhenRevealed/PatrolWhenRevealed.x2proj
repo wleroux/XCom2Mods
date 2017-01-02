@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>47e4580d-983f-4fae-9e5e-28a213d4182c</Guid>
+    <Name>Patrol When Revealed</Name>
+    <Description>Don't you hate it when you're trying to set up a perfect ambush and... the group just stops? 
+
+This mod changes the way that patrols work so that when a patrol's leader is revealed (i.e.: seen by the player,) they do not stop their patrol.</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>ExampleClassOverride</AssemblyName>
+    <RootNamespace>ExampleClassOverride</RootNamespace>
+    <ProjectGuid>{3f350978-33e7-493a-993b-92c1b54bf591}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="ReadMe.txt" />
+    <Content Include="Src\PatrolWhenRevealed\Classes\XGAIPlayer_PatrolWhenRevealed.uc">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Content\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\PatrolWhenRevealed" />
+    <Folder Include="Src\PatrolWhenRevealed\Classes" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
